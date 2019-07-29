@@ -1376,7 +1376,7 @@ a:hover,a:active {
     font-weight:400
 }
 .site-title a:hover {
-    color:orange
+    color:blue
 }
 .site-title img {
     height:40px;
@@ -5776,11 +5776,11 @@ button.botui-actions-buttons-button {
     width:auto
 }
 .logolink a:hover .sakurasono {
-    background-color:orange;
+    background-color:blue;
     color:#fff
 }
 .logolink a:hover .shironeko,.logolink a:hover rt {
-    color:orange
+    color:blue
 }
 .logolink.moe-mashiro a {
     color:#464646;
