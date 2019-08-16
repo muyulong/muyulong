@@ -1100,7 +1100,7 @@ a:hover,a:active {
     background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/pause@32x32.png')
 }
 #video-full {
-    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/add@32x32.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.7/img/other/full@32x32.png');
     bottom:45px;
     display:none
 }
