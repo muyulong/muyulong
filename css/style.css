@@ -1,5 +1,11 @@
+.aplayer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
 #veditor {
-    background-image: url(https://view.moezx.cc/images/2018/03/24/comment-bg.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/comment-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -408,7 +414,7 @@
 .aplayer .aplayer-lrc {
     display:none;
     position:relative;
-    height:30px;
+    height:40px;
     text-align:center;
     overflow:hidden;
     margin:-10px 0 7px
@@ -461,6 +467,9 @@
     -ms-user-select:text;
     user-select:text;
     cursor:default
+}
+.aplayer-lrc-contents p{
+	
 }
 .aplayer .aplayer-list {
     overflow:auto;
@@ -623,8 +632,9 @@ to {
     z-index:9999
 }
 @charset "utf-8";
-    #content {
-    animation:main 1s
+#content {
+    animation:main 1s;
+    position: relative;
 }
 .headertop,.pattern-center {
     animation:header 1s
@@ -713,13 +723,13 @@ audio:not([controls]) {
 a {
     background-color:transparent;
     text-decoration:none;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/ayuda.cur),auto
 }
 a:active,a:hover {
     outline:0
 }
 a:active {
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),alias
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/work.cur),alias
 }
 abbr[title] {
     border-bottom:1px dotted
@@ -840,7 +850,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom:1.5em;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/texto.cur),auto
 }
 dfn,cite,em,i {
     font-style:italic
@@ -856,7 +866,7 @@ blockquote:before {
     position:absolute;
     top:-25px;
     left:12px;
-    color:orange;
+    color:#ff5858;
     font-family:FontAwesome
 }
 blockquote:after {
@@ -865,7 +875,7 @@ blockquote:after {
     position:absolute;
     bottom:-25px;
     right:-5px;
-    color:orange;
+    color:#ff5858;
     font-family:FontAwesome
 }
 blockquote p {
@@ -926,7 +936,7 @@ html {
 body {
     background:#fff;
     background-attachment:fixed;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/normal.cur),auto
 }
 blockquote:before,blockquote:after,q:before,q:after {
     content:""
@@ -980,12 +990,12 @@ button,input[type="button"],input[type="reset"],input[type="submit"] {
     padding:.6em 1em .4em
 }
 button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover {
-    border-color:#ccc #bbb #aaa;
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 15px 17px rgba(255,255,255,.8),inset 0 -5px 12px rgba(0,0,0,.02)
+    /*border-color:#ccc #bbb #aaa;*/
+    /*box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 15px 17px rgba(255,255,255,.8),inset 0 -5px 12px rgba(0,0,0,.02)*/
 }
 button:focus,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,button:active,input[type="button"]:active,input[type="reset"]:active,input[type="submit"]:active {
-    border-color:#aaa #bbb #bbb;
-    box-shadow:inset 0 -1px 0 rgba(255,255,255,.5),inset 0 2px 5px rgba(0,0,0,.15)
+    /*border-color:#aaa #bbb #bbb;*/
+    /*box-shadow:inset 0 -1px 0 rgba(255,255,255,.5),inset 0 2px 5px rgba(0,0,0,.15)*/
 }
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea {
     color:#666;
@@ -1014,14 +1024,14 @@ a {
     transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out
 }
 a:hover,a:focus,a:active {
-    color:orange
+    color:#ff5858
 }
 a:focus {
     outline:0
 }
 a:hover,a:active {
     outline:0;
-    color:orange
+    color:#ff5858
 }
 .site-top {
     width:100%;
@@ -1064,7 +1074,7 @@ a:hover,a:active {
     min-height:550px;
     z-index:0
 }
-#video-btn,#video-add {
+#video-btn,#video-add ,#video-full{
     position:absolute;
     bottom:3px;
     right:5px;
@@ -1080,17 +1090,22 @@ a:hover,a:active {
     -o-animation:poi-face 10s linear infinite alternate;
     animation:poi-face 10s linear infinite alternate
 }
-#video-btn:hover,#video-add:hover {
+#video-btn:hover,#video-add:hover,#video-full:hover  {
     opacity:1
 }
 .video-play,.loadvideo {
-    background-image:url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/play@32x32.png')
+    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/play@32x32.png')
 }
 .video-pause {
-    background-image:url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/pause@32x32.png')
+    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/pause@32x32.png')
+}
+#video-full {
+    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/add@32x32.png');
+    bottom:45px;
+    display:none
 }
 #video-add {
-    background-image:url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/add@32x32.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/add@32x32.png');
     bottom:45px;
     display:none
 }
@@ -1343,6 +1358,33 @@ a:hover,a:active {
 .site-header:hover.is-homepage .lower-cantiner {
     display:block
 }
+.eyes {
+    float:right;
+    height:75px;
+    line-height:75px;
+    margin-right: 60px
+  }
+.site-header .fa-sun-o {
+    height:75px;
+    line-height:75px;
+    font-size:29.6px;
+    z-index:9998;
+    color:#666;
+    cursor:pointer;
+    -webkit-transition:all 300ms ease-in-out;
+    transition:all 300ms ease-in-out
+}
+.site-header .fa-sun-o:hover {
+    cursor:pointer;
+    color:#ff5858
+}
+.site-header .fa-sun-o:active {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg);
+}
 .yya {
     position:fixed;
     left:0;
@@ -1376,7 +1418,8 @@ a:hover,a:active {
     font-weight:400
 }
 .site-title a:hover {
-    color:blue
+    color:#ff5858;
+	
 }
 .site-title img {
     height:40px;
@@ -1472,7 +1515,7 @@ a:hover,a:active {
     color:#666
 }
 .site-top ul li a:hover {
-    color:orange
+    color:#ff5858
 }
 .site-top ul li a:after {
     content:"";
@@ -1480,7 +1523,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-16px;
     height:6px;
-    background-color:#fe9600;
+    background-color:#ff5858;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -1491,7 +1534,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-21px;
     height:6px;
-    background-color:#fe9600;
+    background-color:#ff5858;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -1663,7 +1706,7 @@ a:hover,a:active {
     color:#504e4e
 }
 .entry-title a:hover {
-    color:orange
+    color:#ff5858
 }
 .p-time {
     position:absolute;
@@ -1999,8 +2042,8 @@ i.iconfont.hotpost {
 }
 .navigator i:hover {
     color:#fff;
-    background:orange;
-    border:2px solid orange;
+    background:#ff5858;
+    border:2px solid #ff5858;
     -webkit-transition:all .2s ease-in-out;
     -moz-transition:all .2s ease-in-out;
     -o-transition:all .2s ease-in-out;
@@ -2022,7 +2065,7 @@ i.iconfont.hotpost {
     color:#b9b9b9
 }
 .site-info a:hover {
-    color:orange
+    color:#ff5858
 }
 .footertext p {
     margin-bottom:8px
@@ -2131,8 +2174,8 @@ i.iconfont.hotpost {
     text-decoration:underline dotted rgba(0,0,0,.1)
 }
 .entry-content a:hover {
-    color:orange;
-    text-decoration:underline orange
+    color:#ff5858;
+    text-decoration:underline #ff5858
 }
 h1.entry-title {
     font-size:24px;
@@ -2229,11 +2272,11 @@ h1.page-title.mb- {
     z-index:99;
     width:70px;
     height:900px;
-    background:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/scroll.png) no-repeat center;
+    background:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/scroll.png) no-repeat center;
     background-size:contain;
     -webkit-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/No_Disponible.cur),auto;
     opacity:1
 }
 .cd-top.cd-is-visible {
@@ -2315,7 +2358,7 @@ h1.page-title.mb- {
     margin-right:5px
 }
 .post-tags a:hover {
-    color:orange
+    color:#ff5858
 }
 .post-tags i {
     margin-right:5px
@@ -2375,7 +2418,7 @@ h1.page-title.mb- {
     margin-right:10px
 }
 .post-share ul li a:hover {
-    color:orange
+    color:#ff5858
 }
 .post-share .show-share {
     margin-left:10px;
@@ -2810,7 +2853,7 @@ to {
     height:40px;
     text-align:center;
     line-height:45px;
-    background-image:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg");
+    background-image:url("https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/disqus-preloader.svg");
     background-position:center;
     background-repeat:no-repeat;
     background-size:auto 100%
@@ -2841,7 +2884,7 @@ h3#comments-list-title {
     margin:auto
 }
 .butterBar-message {
-    background:#fe9600;
+    background:#ff5858;
     color:#fff;
     border-bottom-left-radius:4px;
     border-bottom-right-radius:4px;
@@ -3014,7 +3057,7 @@ h1.works-title {
     font-style:italic;
     font-size:20px;
     font-weight:400;
-    color:orange;
+    color:#ff5858;
     margin-left:30px;
     margin-top:50px
 }
@@ -3040,7 +3083,7 @@ span.time {
 .ar-time i {
     padding:10px;
     border-radius:100px;
-    background:orange;
+    background:#ff5858;
     color:#fff
 }
 .ar-time {
@@ -3066,7 +3109,7 @@ span.time {
 span.ar-circle {
     height:10px;
     width:10px;
-    background:orange;
+    background:#ff5858;
     display:inline-block;
     position:absolute;
     left:-5px;
@@ -3148,7 +3191,7 @@ header.page-header {
     -ms-transform:rotate(360deg)
 }
 span.sitename {
-    color:orange;
+    color:#ff5858;
     padding-bottom:10px;
     display:block;
     -webkit-transition:all .3s;
@@ -3179,11 +3222,11 @@ span.sitename {
 }
 .link-title span.fake-title {
     padding-left:10px;
-    border-left:3px solid orange
+    border-left:3px solid #ff5858
 }
 .links ul li:before {
     content:"";
-    background-color:orange;
+    background-color:#ff5858;
     -webkit-transform:skew(45deg,0);
     transform:skew(45deg,0);
     width:0;
@@ -3197,7 +3240,7 @@ span.sitename {
 }
 .links ul li:hover {
     color:#27323a;
-    border:1px solid orange
+    border:1px solid #ff5858
 }
 .links ul li:hover:before {
     width:180%
@@ -3474,7 +3517,7 @@ a.page-numbers {
     font-weight:600
 }
 .comment h4 a:hover {
-    color:orange
+    color:#ff5858
 }
 .comment hr {
     clear:both;
@@ -3597,7 +3640,7 @@ a.page-numbers {
     background-color:rgba(255,255,255,0)
 }
 .comment-respond textarea {
-    background-image:url('https://view.moezx.cc/images/2018/03/24/comment-bg.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/comment-bg.png');
     background-size:contain;
     background-repeat:no-repeat;
     background-position:right;
@@ -3627,9 +3670,9 @@ a.page-numbers {
     text-shadow:none
 }
 .comment-respond input[type='submit']:hover {
-    border:1px solid #fe9600;
+    border:1px solid #ff5858;
     background:none !important;
-    color:#fe9600
+    color:#ff5858
 }
 .comment-respond input[type='submit']:hover {
     background:#5aa738
@@ -3723,7 +3766,7 @@ a.page-numbers {
     line-height:1
 }
 .siren-checkbox-radio:checked+.siren-checkbox-radioInput:after {
-    background-color:#fe9600;
+    background-color:#ff5858;
     border-radius:100%;
     content:"";
     display:block;
@@ -3838,15 +3881,29 @@ li.feature-2 {
     display:initial;
     vertical-align:middle
 }
-@media(max-width:860px) {
-    .notice {
-    margin-top:40px;
-    margin-bottom:20px
-}
-}.headertop {
+.headertop {
     position:relative;
     overflow:hidden;
     height:0
+}
+@media(max-width:860px) {
+    .notice {
+        display: none;
+        margin-top:40px;
+        margin-bottom:20px
+    }
+    .headertop {
+        position:relative;
+        overflow:visible;
+        height:0
+    }
+    .video-stu {
+        display: none;
+    }
+    .headertop-bar::after {
+        height: 2.375rem !important;
+        bottom: -0.999rem !important;
+    }
 }
 .headertop::before {
     content:'';
@@ -3865,14 +3922,14 @@ li.feature-2 {
     background-color:rgba(0,0,0,.3)
 }
 .headertop.filter-grid::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png)
+    background-image:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/grid.png)
 }
 .headertop.filter-dot::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/dot.gif)
+    background-image:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/dot.gif)
 }
 @media(max-width:860px) {
     .headertop.filter-dot::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png)
+    background-image:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/grid.png)
 }
 }.headertop-bar::after {
     content:'';
@@ -3888,7 +3945,7 @@ li.feature-2 {
 .headertop-down {
     position:absolute;
     bottom:50px;
-    left:50%;
+    left:calc(50% - 14px);
     cursor:pointer;
     z-index:5
 }
@@ -3934,7 +3991,7 @@ li.feature-2 {
 }
 .top-social_v2 li {
     margin-right: 0px !important; 
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto !important;
+    cursor: url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/ayuda.cur),auto !important;
 }
 }
 #bgvideo {
@@ -4225,7 +4282,7 @@ i.iconfont.js-toggle-search.iconsearch {
     visibility:visible;
     opacity:.99;
     animation:elastic .5s;
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.2.1/img/other/iloli.gif);
+    background-image:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/iloli.gif);
     background-repeat:no-repeat;
     background-position:bottom right
 }
@@ -4335,7 +4392,7 @@ i.iconfont.js-toggle-search.iconsearch {
     padding:10px 0
 }
 .sorry li a:hover {
-    color:orange
+    color:#ff5858
 }
 .sorry-inner {
     padding:20px;
@@ -4350,14 +4407,14 @@ i.iconfont.js-toggle-search.iconsearch {
 .err-button.back a {
     padding:10px 30px;
     margin:0 10px;
-    border:1px solid orange;
-    color:orange;
+    border:1px solid #ff5858;
+    color:#ff5858;
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
     border-radius:50px
 }
 #gohome {
-    background:orange;
+    background:#ff5858;
     color:#fff
 }
 .err-button.back a:hover {
@@ -4470,7 +4527,7 @@ embed,iframe,object {
     position:absolute
 }
 #nprogress .bar {
-    background:orange;
+    background:#ff5858;
     position:fixed;
     z-index:1031;
     top:0;
@@ -4484,7 +4541,7 @@ embed,iframe,object {
     right:0;
     width:100px;
     height:100%;
-    box-shadow:0 0 10px orange,0 0 5px orange;
+    box-shadow:0 0 10px #ff5858,0 0 5px #ff5858;
     opacity:1;
     -webkit-transform:rotate(3deg) translate(0px,-4px);
     -ms-transform:rotate(3deg) translate(0px,-4px);
@@ -4506,8 +4563,8 @@ embed,iframe,object {
     height:20px;
     box-sizing:border-box;
     border:solid 3px transparent;
-    border-top-color:orange;
-    border-left-color:orange;
+    border-top-color:#ff5858;
+    border-left-color:#ff5858;
     border-radius:50%;
     -webkit-animation:nprogress-spinner 400ms linear infinite;
     animation:nprogress-spinner 400ms linear infinite
@@ -4611,11 +4668,11 @@ i.iconfont.down {
     font-size:15px
 }
 #pagination a:hover {
-    border:1px solid orange;
-    color:orange
+    border:1px solid #ff5858;
+    color:#ff5858
 }
 #pagination .loading {
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg");
+    background:url("https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/wordpress-rotating-ball-o.svg");
     background-position:center;
     background-repeat:no-repeat;
     color:#555;
@@ -4632,6 +4689,10 @@ i.iconfont.down {
 #pagination.pagination-archive {
     margin:80px 0
 }
+.share-mobile {
+    display: none !important;
+}
+
 @media(max-width:630px) {
     .works-list {
         width:100% !important;
@@ -4725,6 +4786,9 @@ i.iconfont.down {
     .post-footer,.post-share,.post-like {
         display:none
     }
+    .share-mobile {
+        display:inline-block !important;
+    }
     .post-tags {
         text-align:center;
         float:none;
@@ -4748,7 +4812,7 @@ i.iconfont.down {
     .site-branding {
         float:right;
         height:50px;
-        line-height:43px;
+        line-height:48px;
         margin-right: 6px
     }
     .site-title img {
@@ -4768,7 +4832,7 @@ i.iconfont.down {
         display:none
     }
     .links ul li:hover .sitename {
-        color:orange
+        color:#ff5858
     }
     .links ul li:hover .linkdes {
         color:#949494;
@@ -4829,7 +4893,7 @@ h3#comments-list-title,nav#comments-navi {
     transition:all .3s ease
 }
 .wrapper section {
-    max-width:600px
+    /*max-width:600px*/
 }
 .wrapper section h1 {
     font-weight:300;
@@ -4981,7 +5045,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 #mo-nav ul li a:hover {
     cursor:pointer;
-    color:orange
+    color:#ff5858
 }
 .we-content li {
     height:250px
@@ -5025,7 +5089,7 @@ i.iconfont.js-toggle-search.iconsearch {
     background-color:#eee
 }
 ::-webkit-scrollbar-thumb {
-    background-color:#69d2e7
+    background-color:#ff5858
 }
 @keyframes poi-deg {
     0% {
@@ -5370,7 +5434,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 .no-logged a {
     display:initial;
-    color:#69d2e7;
+    color:#ff5858;
     font-size:14px;
     padding:0 5px;
     text-decoration:underline
@@ -5387,7 +5451,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }.oshimai {
     height:2em;
     width:6.11em;
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/oshimai.svg");
+    background:url("https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/oshimai.svg");
     background-size:cover;
     margin:0 auto
 }
@@ -5533,7 +5597,7 @@ i.iconfont.js-toggle-search.iconsearch {
     border:0;
     color:#fff;
     line-height:1;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/No_Disponible.cur),auto;
     font-size:14px;
     font-weight:500;
     padding:7px 15px;
@@ -5659,7 +5723,7 @@ button.botui-actions-buttons-button::-moz-focus-inner,input.botui-actions-text-i
     padding:0
 }
 button.botui-actions-buttons-button {
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/No_Disponible.cur),auto;
     -webkit-appearance:button
 }
 .botui-app-container {
@@ -5761,7 +5825,8 @@ button.botui-actions-buttons-button {
     padding-left:35px;
     padding-right:15px;
     padding-top:11px;
-    text-decoration-line:none
+    text-decoration-line:none;
+	transition:color .30s ease-in-out
 }
 .logolink .sakurasono {
     background-color:rgba(255,255,255,.5);
@@ -5773,14 +5838,17 @@ button.botui-actions-buttons-button {
     padding-bottom:0;
     padding-top:1px;
     text-size-adjust:100%;
-    width:auto
+    width:auto;
+	transition:color .30s ease-in-out
 }
 .logolink a:hover .sakurasono {
-    background-color:blue;
-    color:#fff
+    background-color:#ff5858;
+    color:#fff;
+	transition:color .30s ease-in-out
 }
 .logolink a:hover .shironeko,.logolink a:hover rt {
-    color:blue
+    color:#ff5858;
+	transition:color .30s ease-in-out
 }
 .logolink.moe-mashiro a {
     color:#464646;
@@ -5792,7 +5860,8 @@ button.botui-actions-buttons-button {
     padding-left:6px;
     padding-right:15px;
     padding-top:11px;
-    text-decoration-line:none
+    text-decoration-line:none;
+	transition:color .30s ease-in-out
 }
 .logolink.moe-mashiro .sakurasono {
     font-size:25px;
@@ -6163,7 +6232,7 @@ button.botui-actions-buttons-button {
 }
 @media(min-width:861px) {
     .hide-live2d {
-    background-color:orange;
+    background-color:#ff5858;
     bottom:156px;
     visibility:visible;
     min-height:38.75px
@@ -6199,19 +6268,6 @@ button.botui-actions-buttons-button {
     left:0;
     width:100%;
     height:100%
-}
-.hearthstone-deck {
-    overflow:hidden
-}
-.hearthstone-deck-container {
-    background:url(https://view.moezx.cc/images/2018/12/09/loading-bilibili.gif);
-    background-repeat:no-repeat;
-    background-size:94px 82px;
-    background-position:center;
-    border:8px solid #dec79b;
-    border-width:7px;
-    -o-border-image:url(https://view.moezx.cc/images/2018/12/09/hearthstone_border.png) 7 stretch;
-    border-image:url(https://view.moezx.cc/images/2018/12/09/hearthstone_border.png) 7 stretch
 }
 #Snow {
     position:fixed;
@@ -6482,12 +6538,6 @@ to {
     border-radius:3px;
     font-weight:400
 }
-.mashiro-author-info {
-    background:url('//static.mashiro.top/wp-content/themes/Sakura/images/LOGO-Unicorn-Gradient.svg');
-    width:200px;
-    height:200px;
-    margin:auto
-}
 .itempic {
     min-height:280px;
     max-height:300px;
@@ -6590,7 +6640,7 @@ progress {
     color:#000
 }
 .art .art-content #archives a:hover {
-    color:orange
+    color:#ff5858
 }
 .art .art-content #archives .al_year {
     padding-left:100px
@@ -6741,7 +6791,7 @@ a.toc-link {
     width:2px
 }
 .is-active-link::before {
-    background-color:orange !important
+    background-color:#ff5858 !important
 }
 .flipx {
     -moz-transform:scaleX(-1);
@@ -6875,10 +6925,10 @@ to {
 }
 .motion-switcher-table th:hover {
     background-color:rgba(245,245,245,.5);
-    color:orange
+    color:#ff5858
 }
 .motion-switcher-table .on-hover {
-    color:orange
+    color:#ff5858
 }
 .motion-container {
     height:110px;
@@ -6918,7 +6968,7 @@ to {
     background-color:rgba(245,245,245,.8)
 }
 #emotion-toggle,.emotion-box,.on-hover,.emotion-item,.emoji-item,.tieba-container span {
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/No_Disponible.cur),auto
 }
 .alignright {
     width:auto !important
@@ -7110,8 +7160,8 @@ to {
     cursor:pointer
 }
 .insert-image-tips:hover {
-    color:orange;
-    border:1px solid orange
+    color:#ff5858;
+    border:1px solid #ff5858
 }
 .insert-image-button {
     opacity:0;
@@ -7124,8 +7174,8 @@ to {
     cursor:pointer
 }
 .insert-image-tips-hover {
-    color:orange;
-    border:1px solid orange
+    color:#ff5858;
+    border:1px solid #ff5858
 }
 .upload-image-preview {
     display:inline-block;
@@ -7275,6 +7325,7 @@ to {
     z-index:2
 }
 .highlight-wrap {
+    position: relative;
     background:#21252b;
     border-radius:5px;
     font:15px/22px "Microsoft YaHei","Arial",Sans-Serif;
@@ -7318,7 +7369,7 @@ to {
     padding:2px;
     text-shadow:none;
     border-radius:0 0 5px 5px;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/cursor/texto.cur),auto
 }
 .highlight-wrap code[data-rel]:before {
     color:#fff;
@@ -7622,7 +7673,7 @@ img[src*="#in-center"] {
 #banner_wave_1 {
     width:auto;
     height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.1/img/Sakura/images/wave1.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/wave1.png") repeat-x;
     _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
@@ -7636,7 +7687,7 @@ img[src*="#in-center"] {
 #banner_wave_2 {
     width:auto;
     height:80px;
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.1/img/Sakura/images/wave2.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/img/other/wave2.png") repeat-x;
     _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
@@ -7785,4 +7836,45 @@ td.hljs-ln-numbers {
     vertical-align: top;
     left: 0;
     width: 30px;
+}
+.post-share:hover .show-share, .post-share:hover .sharehidden {
+    opacity: 1;
+    display: inline-block;
+}
+#page {
+    min-height: calc(100vh - 150px);
+}
+.entry-content * {
+    box-sizing: border-box;
+}
+.entry-content pre.highlight-wrap .copy-code {
+    color: #fff;
+    position: absolute;
+    float: right;
+    right: 10px;
+    top: 0;
+    padding-top: 4px;
+    padding-right: 2px;
+    z-index: 2;
+    font-size: 16px;
+}
+.toc {
+    width: 200px;
+    height: auto;
+    z-index: 98;
+    background-color: rgba(255,255,255,0);
+    transform: translateX(0);
+    right: calc((100% - 950px - 250px) / 2);
+    top:10px;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.toc-fixed {
+    position: fixed !important;
+    top: 85px;
+}
+
+@media(max-width:1200px) {
+    .toc {display: none;}
 }
