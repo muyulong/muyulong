@@ -1,3 +1,3 @@
 # muyulong
 jsDelivr CDN资源</br>
-https://cdn.jsdelivr.net/gh/muyulong/muyulong@V0.4/
+[![](https://data.jsdelivr.com/v1/package/gh/muyulong/muyulong/badge)](https://www.jsdelivr.com/package/gh/muyulong/muyulong)
