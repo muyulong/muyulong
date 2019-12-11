@@ -1643,6 +1643,7 @@ a:hover,a:active {
     padding:40px 0 0
 }
 .site-content {
+	box-sizing:content-box!important;
     max-width:800px;
     padding:0 10px;
     margin-left:auto;
