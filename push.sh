@@ -2,5 +2,5 @@
 git add .gitattributes
 git add .
 git commit -m "change"
-git push -u origin master 
+git push origin master 
 
