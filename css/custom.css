@@ -7,8 +7,9 @@
 }
 
 #web_bg {
-    background: linear-gradient(90deg,rgba(247,149,51,.1),rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1))
+    background: linear-gradient(-45deg, rgba(240, 172, 247, 0.45),rgba(172, 247, 240, 0.45),rgba(247, 240, 172, 0.45))
 }
+
 #footer {
     background: rgba(255,255,255,.15);
     color: #000;
