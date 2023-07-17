@@ -1,18 +1,36 @@
-### Hi there 👋
+# Hi there 👋
 
-I'm a C++/Qt developer, and I'd like to make some contributions for Qt open source projects and share some thoughts on my blog and github.
-I'm interesting in web development, welcome to visit my blog👉[Muyulong's Blog](https://mmyyll.ml/)
+I'm a C++/Python developer. I'm from China, living in Wuxi and also working here.
 
-### Find me
+I'm interesting in AIGC and LLM, always hope we can learn each other.
 
-- <https://github.com/muyulong>
-- <https://mmyyll.ml/about/>
-- <mylyao@qq.com>
+I'm a blogger, welcome to visit my blog👉[Muyulong's Blog](https://mmyyll.ml/)
 
-![Github Stats](https://github-readme-stats.vercel.app/api?username=muyulong&show_icons=true&theme=dark&count_private=true)
-![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=muyulong&theme=dark&layout=compact)
+## 🔧 Technologies & Tools
+![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b)
+![Qt](https://img.shields.io/badge/-Qt-000?&logo=Qt)
+![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
+![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux)
+![VsCode](https://img.shields.io/badge/-VsCode-000?&logo=VisualStudioCode)
+![React](https://img.shields.io/badge/-React-000?&logo=React)
+![Redis](https://img.shields.io/badge/-Redis-000?&logo=Redis)
+![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=MongoDB)
 
-This is my blog CDN👇
-# muyulong
-jsDelivr CDN资源</br>
-[![jsdelivr](https://data.jsdelivr.com/v1/package/gh/muyulong/muyulong/badge)](https://www.jsdelivr.com/package/gh/muyulong/muyulong)
+
+## 🤗 Find me
+
+- [Github](https://github.com/muyulong)
+- [Blog](https://mmyyll.ml/)
+- [Mail](mylyao@qq.com)
+
+## 📈 GitHub Stats
+
+emmm, seems bad...
+
+![Github Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=muyulong&show_icons=true&theme=compact)
+
+![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=muyulong&show_icons=true&theme=compact)
+
+<img src="https://github-profile-trophy.vercel.app/?username=muyulong">
+
+<a title="Hits" target="_blank" href="https://github.com/muyulong/muyulong"><img src="https://hits.b3log.org/muyulong/muyulong.svg"></a>
