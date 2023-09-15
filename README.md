@@ -20,8 +20,8 @@ I'm a blogger, welcome to visit my blog👉[Muyulong's Blog](https://mmyyll.ml/)
 ## 🤗 Find me
 
 - [Github](https://github.com/muyulong)
-- [Blog](https://mmyyll.ml/)
-- [Mail](mylyao@qq.com)
+- [Blog](https://blog.muyulong.top/)
+- [Mail](mailto:mylyao@qq.com)
 
 ## 📈 GitHub Stats
 
