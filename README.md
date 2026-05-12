@@ -4,8 +4,6 @@ I'm a C++/Python developer. I'm from China, living in Wuxi and also working here
 
 I'm interesting in AIGC and LLM, always hope we can learn each other.
 
-I'm a blogger, welcome to visit my blog👉[Muyulong's Blog](https://mmyyll.ml/)
-
 ## 🔧 Technologies & Tools
 ![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b)
 ![Qt](https://img.shields.io/badge/-Qt-000?&logo=Qt)
