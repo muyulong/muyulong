@@ -18,12 +18,9 @@ I'm interesting in AIGC and LLM, always hope we can learn each other.
 ## 🤗 Find me
 
 - [Github](https://github.com/muyulong)
-- [Blog](https://blog.muyulong.top/)
 - [Mail](mailto:mylyao@qq.com)
 
 ## 📈 GitHub Stats
-
-emmm, seems bad...
 
 ![Github Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=muyulong&show_icons=true&theme=compact)
 
